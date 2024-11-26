@@ -8,6 +8,8 @@ step 1: make your rust project (cargo new blahblahblahwhatever)
 
 step 2: copy the contents of the quickstart folder in this repo into your new project folder (they should be on the same level as src, so .cargo and src should now be two subdirs of the same folder)
 
+(if you're reading this on crates.io, im referring to the repo [here!](https://github.com/0x0nyx98/dos_to_go))
+
 step 3: add the dos_to_go dependency (cargo add dos_to_go)
 
 step 4: rename your main.rs to lib.rs and add this header:

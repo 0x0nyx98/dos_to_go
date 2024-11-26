@@ -1,9 +1,12 @@
-workspace = { members = ["macro_crate"] }
 [package]
 name = "dos_to_go"
 authors = ["onyx :3 <nyxmailbox@proton.me>"]
 version = "0.0.5"
 edition = "2021"
+license = "MIT"
+description = "Run Rust on DOS!"
+repository = "https://github.com/0x0nyx98/dos_to_go"
+readme = "readme.md"
 
 [dependencies]
-macro_crate = { path = "./macro_crate" }
+dos_to_go-procmacro = { version = "1.0.0" }

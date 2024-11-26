@@ -1,7 +1,7 @@
 #![no_std]
 use core::arch::asm;
 
-pub use macro_crate::entrypoint as entrypoint;
+pub use dos_to_go_procmacro::entrypoint as entrypoint;
 
 pub fn exit(code: u8) {
     unsafe {

@@ -1,0 +1,15 @@
+[package]
+name = "dos_to_go-procmacro"
+authors = ["onyx :3 <nyxmailbox@proton.me>"]
+version = "1.0.0"
+edition = "2021"
+license = "MIT"
+description = "Run Rust on DOS! Procedural macro crate, do not use! Add dos_to_go to dependencies instead!"
+repository = "https://github.com/0x0nyx98/dos_to_go"
+
+[lib]
+proc-macro = true
+
+[dependencies]
+quote = "1.0.37"
+syn = { version = "2.0.89", features = ["full"] }
