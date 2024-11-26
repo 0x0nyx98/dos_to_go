@@ -32,3 +32,12 @@ pub fn puts(s: &str) {
         );
     }
 }
+
+pub fn arbitrary_21h(ah: u8) {
+    unsafe {
+        asm!(
+            "int 0x21",
+            in("ax") (ah as u16) << 8
+        );
+    }
+}

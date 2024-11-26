@@ -4,14 +4,16 @@ version = 3
 
 [[package]]
 name = "dos_to_go"
-version = "0.0.5"
+version = "0.0.6"
 dependencies = [
- "macro_crate",
+ "dos_to_go-procmacro",
 ]
 
 [[package]]
-name = "macro_crate"
-version = "0.1.0"
+name = "dos_to_go-procmacro"
+version = "1.0.0"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "a5e5dcd671960f84fed379517ac7dd79293cd51e5f833f6e3cc6abb50a62785e"
 dependencies = [
  "quote",
  "syn",
