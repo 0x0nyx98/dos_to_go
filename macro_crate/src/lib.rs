@@ -11,7 +11,20 @@ pub fn entrypoint(_: TokenStream, item: TokenStream) -> TokenStream {
                 #[no_mangle]
                 fn _dtg_entrypoint() { 
                     let code = #func_name();
-                 }
+
+                    exit(code);
+                }
+
+                 #[panic_handler]
+                fn panic(_panic: &core::panic::PanicInfo<'_>) -> ! {
+                    unsafe {
+                        asm!(
+                            "mov ax, 0x4C80",
+                            "int 0x21"
+                        );
+                    }
+                    loop {}
+                }
             ));
             wrap.extend(item);
             wrap
