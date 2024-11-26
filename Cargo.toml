@@ -1,0 +1,9 @@
+workspace = { members = ["macro_crate"] }
+[package]
+name = "dos_to_go"
+authors = ["onyx :3 <nyxmailbox@proton.me>"]
+version = "0.0.5"
+edition = "2021"
+
+[dependencies]
+macro_crate = { path = "./macro_crate" }
